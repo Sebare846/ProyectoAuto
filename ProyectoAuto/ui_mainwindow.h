@@ -73,6 +73,7 @@ public:
     QFrame *frame;
     QWidget *Radarwidget;
     QWidget *Speedwidget;
+    QPushButton *pushButton_4;
     QMenuBar *menubar;
     QMenu *menuMenu;
     QMenu *menuComunicaci_n;
@@ -430,6 +431,23 @@ public:
 "	background-color: rgb(0, 0, 0);\n"
 "}\n"
 ""));
+        pushButton_4 = new QPushButton(centralwidget);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(770, 210, 60, 60));
+        pushButton_4->setStyleSheet(QString::fromUtf8("QPushButton#pushButton_4 {\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: rgb(255, 0, 0);\n"
+"    border-style: outset;\n"
+"    border-width: 2px;\n"
+"    border-radius: 30px;\n"
+"	border-color: rgb(0, 0, 0);\n"
+"    font: bold 14px;\n"
+"\n"
+"}\n"
+"QPushButton#pushButton_4:pressed {\n"
+"	background-color: rgb(166, 0, 0);\n"
+"    border-style: inset;\n"
+"}"));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -524,6 +542,7 @@ public:
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "GET IR", nullptr));
         botonAlive->setText(QCoreApplication::translate("MainWindow", "ALIVE", nullptr));
         botonAll->setText(QCoreApplication::translate("MainWindow", "GET ALL", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "RESET", nullptr));
         menuMenu->setTitle(QCoreApplication::translate("MainWindow", "Menu", nullptr));
         menuComunicaci_n->setTitle(QCoreApplication::translate("MainWindow", "Comunicaci\303\263n", nullptr));
     } // retranslateUi

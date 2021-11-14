@@ -631,3 +631,13 @@ void MainWindow::on_botonAll_clicked()
     servoTimer->start(100);
 
 }
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    powerM1 = 0;
+    powerM2 = 0;
+    anguloServo = 0;
+    estadoComandos = SET_POWER;
+    estadoComandos = SET_SERVO;
+}
+
