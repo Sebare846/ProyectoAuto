@@ -638,6 +638,14 @@ void MainWindow::on_pushButton_4_clicked()
     powerM2 = 0;
     anguloServo = 0;
     estadoComandos = SET_POWER;
+    sendData();
     estadoComandos = SET_SERVO;
+    sendData();
+    ui->dialPower1->setValue(0);
+    ui->dialPower2->setValue(0);
+    ui->dialServo->setValue(0);
+    ui->lcdAngulo->display(QString().number(0));
+    ui->speedScreen1->display(QString().number(0));
+    ui->speedScreen2->display(QString().number(0));
 }
 
